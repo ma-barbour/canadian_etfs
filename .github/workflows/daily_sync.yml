@@ -31,7 +31,7 @@ jobs:
 
       - name: Run Data Pipeline
         # Ensure this matches the exact name of your R script
-        run: Rscript data_pipeline.R 
+        run: Rscript update_data.R 
 
       - name: Commit and Push Updated Data
         run: |
