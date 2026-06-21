@@ -26,7 +26,7 @@ jobs:
       - name: Install R Packages
         # NOTE: Update this list with any specific packages your data_pipeline.R script needs
         run: |
-          install.packages(c("dplyr", "tidyr", "lubridate", "jsonlite", "zoo", "quantmod"))
+          install.packages(c("tidyverse", "tidyquant", "jsonlite", "slider", "zoo"))
         shell: Rscript {0}
 
       - name: Run Data Pipeline
