@@ -84,6 +84,7 @@ async function initializeDashboard() {
     }
 }
 
+
 // -----------------------------------------------------------------------------
 // COMPONENT 1: Top Metrics Grid
 // -----------------------------------------------------------------------------
@@ -797,6 +798,28 @@ function setupScatterControls() {
     });
 }
 
+function calculateRollingStdDev(arrayA, arrayB, windowSize = 20) {
+    const rollingStd = [];
+    
+    // Calculate daily differences: (ETF Return - VCN Return)
+    const diffs = arrayA.map((val, idx) => val - arrayB[idx]);
+
+    for (let i = 0; i < diffs.length; i++) {
+        if (i < windowSize - 1) {
+            rollingStd.push(null); // Not enough data points yet for a full window
+            continue;
+        }
+
+        const windowSlice = diffs.slice(i - windowSize + 1, i + 1);
+        const mean = windowSlice.reduce((sum, val) => sum + val, 0) / windowSize;
+        
+        const variance = windowSlice.reduce((sum, val) => sum + Math.pow(val - mean, 2), 0) / (windowSize - 1);
+        rollingStd.push(Math.sqrt(variance));
+    }
+
+    return rollingStd;
+}
+
 function calculateAndRenderScatter() {
     if (scatterChart) scatterChart.destroy();
 
@@ -811,6 +834,7 @@ function calculateAndRenderScatter() {
     const scatterPoints = [];
     let vcnReturns = [];
     let etfReturns = [];
+    let returnDates = [];
 
     // Calculate daily percentage changes and map them to X (VCN) and Y (ETF)
     for (let i = 1; i < windowDates.length; i++) {
@@ -826,6 +850,7 @@ function calculateAndRenderScatter() {
             scatterPoints.push({ x: rVcn, y: rEtf });
             vcnReturns.push(rVcn);
             etfReturns.push(rEtf);
+            returnDates.push(windowDates[i]);
         }
     }
 
@@ -939,6 +964,154 @@ function calculateAndRenderScatter() {
                     grid: { color: '#1e293b' },
                     ticks: { color: '#94a3b8', callback: val => val + '%' },
                     title: { display: true, text: `${activeScatterEtf} Daily Return`, color: '#94a3b8', font: { weight: 'bold' } }
+                }
+            }
+        }
+    });
+    // ==========================================
+    // NEW: Rolling Standard Deviation Chart (1-Year Aligned)
+    // ==========================================
+    
+    // 1. Create a fast lookup dictionary for the active ETF across the whole dataset
+    const allVcnData = pricesWithMa.filter(d => d.symbol === 'VCN').sort((a,b) => a.date.localeCompare(b.date));
+    const allEtfData = pricesWithMa.filter(d => d.symbol === activeScatterEtf);
+    
+    const etfPriceLookup = {};
+    allEtfData.forEach(d => etfPriceLookup[d.date] = d.price);
+
+    const fullDates = [];
+    const fullVcnReturns = [];
+    const fullEtfReturns = [];
+
+    // 2. Calculate daily returns for the ENTIRE history
+    for (let i = 1; i < allVcnData.length; i++) {
+        const dt = allVcnData[i].date;
+        const prevDt = allVcnData[i-1].date;
+        
+        const vcnPrev = allVcnData[i-1].price;
+        const vcnCurr = allVcnData[i].price;
+        const etfPrev = etfPriceLookup[prevDt];
+        const etfCurr = etfPriceLookup[dt];
+
+        if (vcnPrev > 0 && etfPrev > 0 && etfCurr !== undefined) {
+            fullVcnReturns.push(((vcnCurr - vcnPrev) / vcnPrev) * 100);
+            fullEtfReturns.push(((etfCurr - etfPrev) / etfPrev) * 100);
+            fullDates.push(dt);
+        }
+    }
+
+    // 3. Calculate rolling std dev on the full dataset so the 20-day warmup happens invisibly in the past
+    const fullRollingStd = calculateRollingStdDev(fullEtfReturns, fullVcnReturns, 20);
+
+    // 4. Find the 1-year cutoff date (anchored to the 1st of the month)
+    const maxDateStr = fullDates[fullDates.length - 1];
+    const maxDate = new Date(maxDateStr + "T00:00:00");
+    const cutoffDate = new Date(maxDate);
+    cutoffDate.setFullYear(maxDate.getFullYear() - 1);
+    cutoffDate.setDate(1);
+    
+    const y = cutoffDate.getFullYear();
+    const m = String(cutoffDate.getMonth() + 1).padStart(2, '0');
+    const cutoffDateStr = `${y}-${m}-01`;
+
+    // 5. Filter down to only the final 1-year display window
+    const displayDates = [];
+    const displayRollingStd = [];
+
+    for (let i = 0; i < fullDates.length; i++) {
+        if (fullDates[i] >= cutoffDateStr) {
+            displayDates.push(fullDates[i]);
+            displayRollingStd.push(fullRollingStd[i]);
+        }
+    }
+
+    const stdCtx = document.getElementById('rollingStdChart').getContext('2d');
+
+    if (window.rollingChartInstance) {
+        window.rollingChartInstance.destroy();
+    }
+
+    window.rollingChartInstance = new Chart(stdCtx, {
+        type: 'line',
+        data: {
+            labels: displayDates, 
+            datasets: [{
+                label: `20-Day Rolling Std Dev (${activeScatterEtf} vs VCN)`,
+                data: displayRollingStd,
+                borderColor: etfColor, 
+                borderWidth: 1.5,
+                pointRadius: 0,
+                pointHoverRadius: 4,
+                fill: true,
+                backgroundColor: `${etfColor}10`, 
+                tension: 0.2
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+                legend: { display: false },
+                tooltip: {
+                    backgroundColor: '#0f172a', titleColor: '#94a3b8', bodyColor: '#f1f5f9', borderColor: '#334155', borderWidth: 1,
+                    callbacks: {
+                        label: context => `Std Dev: ${context.parsed.y.toFixed(3)}%`
+                    }
+                }
+            },
+            scales: {
+                x: {
+                    grid: { 
+                        color: function(context) {
+                            if (context.tick === undefined) return 'transparent';
+                            const index = context.tick.value;
+                            
+                            if (index === 0) return '#1e293b'; 
+                            
+                            const prevDateStr = displayDates[index - 1];
+                            const currDateStr = displayDates[index];
+                            
+                            // Draw a gridline only when the month changes
+                            if (prevDateStr && currDateStr && prevDateStr.substring(0, 7) !== currDateStr.substring(0, 7)) {
+                                return '#1e293b'; 
+                            }
+                            return 'transparent';
+                        }, 
+                        drawBorder: false
+                    },
+                    ticks: { 
+                        color: '#64748b', 
+                        autoSkip: false, // Forces Chart.js to evaluate every point
+                        maxRotation: 0,
+                        callback: function(val, index) {
+                            if (index === 0) {
+                                const d = new Date(displayDates[0] + "T00:00:00");
+                                return d.toLocaleDateString('en-US', { year: '2-digit', month: 'short' });
+                            }
+                            
+                            const prevDateStr = displayDates[index - 1];
+                            const currDateStr = displayDates[index];
+                            
+                            if (!prevDateStr || !currDateStr) return '';
+                            
+                            // Print a label only when the month changes
+                            if (prevDateStr.substring(0, 7) !== currDateStr.substring(0, 7)) {
+                                const currentDate = new Date(currDateStr + "T00:00:00");
+                                return currentDate.toLocaleDateString('en-US', { year: '2-digit', month: 'short' });
+                            }
+                            return '';
+                        }
+                    }
+                },
+                y: {
+                    min: 0, 
+                    max: 3, 
+                    grid: { color: '#1e293b' },
+                    ticks: { 
+                        color: '#64748b',
+                        callback: val => val.toFixed(2) + '%'
+                    },
+                    title: { display: true, text: 'SD Price Differnce', color: '#64748b' }
                 }
             }
         }
