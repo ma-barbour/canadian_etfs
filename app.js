@@ -6,7 +6,8 @@ let pricesWithMa = [];
 // Chart Instances
 let baseChart = null;
 let comparisonChart = null;
-let betaChart = null; // NEW: Track the beta chart instance
+let betaChart = null; 
+let scatterChart = null;
 
 // UI State Defaults for Comparison Chart
 let activeEtf1 = 'XEG';
@@ -14,6 +15,7 @@ let activeEtf2 = 'XFN';
 let activeYears = 1;
 let showRatio = false;
 let activeCorrYears = 1; 
+let activeScatterEtf = 'XEG';
 
 // Core Color Palette (Reversed Viridis)
 const colorMap = {
@@ -50,6 +52,22 @@ async function initializeDashboard() {
         pricesIndexed = await idxRes.json();
         pricesWithMa = await maRes.json();
 
+        // NEW: Extract the latest date and inject it into the header
+        const allDates = [...new Set(pricesIndexed.map(d => d.date))].sort();
+        const maxDateStr = allDates[allDates.length - 1]; 
+        
+        // Append T00:00:00 to prevent local timezone shifts when parsing the string
+        const maxDate = new Date(maxDateStr + "T00:00:00");
+        const formattedDate = maxDate.toLocaleDateString('en-US', { 
+            weekday: 'short', 
+            year: 'numeric', 
+            month: 'short', 
+            day: 'numeric' 
+        });
+        
+        document.getElementById('last-updated').innerHTML = 
+            `<span class="text-slate-500">Latest Data:</span> <span class="text-cyan-400 ml-1">${formattedDate}</span>`;
+
         // Render Dashboard Elements
         buildTickerGrid();
         renderBaseChart();
@@ -57,9 +75,9 @@ async function initializeDashboard() {
         updateAndRenderComparison();
         setupCorrelationControls();
         calculateAndRenderMatrix();
-        
-        // NEW: Render the Rolling Beta chart
         calculateAndRenderBeta();
+        setupScatterControls();
+        calculateAndRenderScatter();
 
     } catch (error) {
         console.error("Pipeline Sync Error: Unable to fetch local dataset components.", error);
@@ -562,9 +580,6 @@ function calculateAndRenderMatrix() {
 // -----------------------------------------------------------------------------
 // COMPONENT 5: Rolling 200-Day Beta Chart
 // -----------------------------------------------------------------------------
-// -----------------------------------------------------------------------------
-// COMPONENT 5: Rolling 200-Day Beta Chart
-// -----------------------------------------------------------------------------
 function calculateAndRenderBeta() {
     if (betaChart) betaChart.destroy();
 
@@ -759,6 +774,172 @@ function calculateAndRenderBeta() {
                     } 
                 },
                 y: { grid: { color: '#1e293b' }, ticks: { color: '#94a3b8' }, title: { display: true, text: "Market Beta (LM Slope)", color: '#94a3b8', font: { size: 12, weight: 'medium' } } }
+            }
+        }
+    });
+}
+
+// -----------------------------------------------------------------------------
+// COMPONENT 6: 200-Day Scatter & Regression
+// -----------------------------------------------------------------------------
+function setupScatterControls() {
+    const allSymbols = [...new Set(pricesWithMa.map(d => d.symbol))];
+    const selectableSymbols = allSymbols.filter(sym => sym !== 'VCN').sort();
+
+    const select = document.getElementById('scatter-etf-select');
+    selectableSymbols.forEach(sym => {
+        select.add(new Option(sym, sym, false, sym === activeScatterEtf));
+    });
+
+    select.addEventListener('change', (e) => {
+        activeScatterEtf = e.target.value;
+        calculateAndRenderScatter();
+    });
+}
+
+function calculateAndRenderScatter() {
+    if (scatterChart) scatterChart.destroy();
+
+    const allDates = [...new Set(pricesWithMa.map(d => d.date))].sort();
+
+    // We need the last 201 dates to calculate exactly 200 daily returns
+    const windowDates = allDates.slice(-201);
+
+    const vcnData = pricesWithMa.filter(d => d.symbol === 'VCN' && windowDates.includes(d.date)).sort((a,b) => a.date.localeCompare(b.date));
+    const etfData = pricesWithMa.filter(d => d.symbol === activeScatterEtf && windowDates.includes(d.date)).sort((a,b) => a.date.localeCompare(b.date));
+
+    const scatterPoints = [];
+    let vcnReturns = [];
+    let etfReturns = [];
+
+    // Calculate daily percentage changes and map them to X (VCN) and Y (ETF)
+    for (let i = 1; i < windowDates.length; i++) {
+        const vcnPrev = vcnData[i-1]?.price;
+        const vcnCurr = vcnData[i]?.price;
+        const etfPrev = etfData[i-1]?.price;
+        const etfCurr = etfData[i]?.price;
+
+        if (vcnPrev > 0 && etfPrev > 0) {
+            const rVcn = ((vcnCurr - vcnPrev) / vcnPrev) * 100; 
+            const rEtf = ((etfCurr - etfPrev) / etfPrev) * 100; 
+
+            scatterPoints.push({ x: rVcn, y: rEtf });
+            vcnReturns.push(rVcn);
+            etfReturns.push(rEtf);
+        }
+    }
+
+    // Calculate Regression Line Math (Slope/Beta and Intercept/Alpha)
+    const meanX = vcnReturns.reduce((sum, val) => sum + val, 0) / vcnReturns.length;
+    const meanY = etfReturns.reduce((sum, val) => sum + val, 0) / etfReturns.length;
+
+    let covSum = 0;
+    let varXSum = 0;
+
+    for (let i = 0; i < vcnReturns.length; i++) {
+        covSum += (vcnReturns[i] - meanX) * (etfReturns[i] - meanY);
+        varXSum += Math.pow(vcnReturns[i] - meanX, 2);
+    }
+
+    const beta = varXSum > 0 ? covSum / varXSum : 0;
+    const alpha = meanY - (beta * meanX);
+
+    // NEW: Calculate a unified, symmetrical boundary for both axes
+    const minX_raw = Math.min(...vcnReturns);
+    const maxX_raw = Math.max(...vcnReturns);
+    const minY_raw = Math.min(...etfReturns);
+    const maxY_raw = Math.max(...etfReturns);
+
+    // Find the absolute largest move, and add 1% padding so dots don't touch the edge
+    const maxBound = Math.ceil(Math.max(
+        Math.abs(minX_raw), 
+        Math.abs(maxX_raw), 
+        Math.abs(minY_raw), 
+        Math.abs(maxY_raw)
+    ) + 1);
+
+    // Draw the regression line entirely across the new unified grid
+    const linePoints = [
+        { x: -maxBound, y: (beta * -maxBound) + alpha },
+        { x: maxBound, y: (beta * maxBound) + alpha }
+    ];
+
+    const ctx = document.getElementById('scatterChart').getContext('2d');
+    
+    const etfColor = colorMap[activeScatterEtf] || '#06b6d4';
+
+    const betaAnnotationPlugin = {
+        id: 'betaAnnotation',
+        afterDraw(chart) {
+            const { ctx, chartArea: { top, right } } = chart;
+            ctx.save();
+            ctx.font = 'bold 14px sans-serif';
+            ctx.fillStyle = '#f1f5f9'; 
+            ctx.textAlign = 'right';
+            ctx.fillText(`\u03B2 = ${beta.toFixed(2)}`, right - 15, top + 20);
+            ctx.restore();
+        }
+    };
+
+    scatterChart = new Chart(ctx, {
+        type: 'scatter',
+        data: {
+            datasets: [
+                {
+                    type: 'line',
+                    label: `Linear Regression`,
+                    data: linePoints,
+                    borderColor: '#f1f5f9',
+                    borderWidth: 2,
+                    pointRadius: 0,
+                    fill: false,
+                    order: 1
+                },
+                {
+                    type: 'scatter',
+                    label: `${activeScatterEtf} Daily Returns`,
+                    data: scatterPoints,
+                    backgroundColor: etfColor, 
+                    borderColor: etfColor,
+                    borderWidth: 1,
+                    pointRadius: 4,
+                    hoverRadius: 7,
+                    order: 2
+                }
+            ]
+        },
+        plugins: [betaAnnotationPlugin],
+        options: {
+            aspectRatio: 1, // NEW: Forces Chart.js to render a perfect square
+            responsive: true, 
+            maintainAspectRatio: true, 
+            plugins: {
+                legend: { display: false },
+                tooltip: {
+                    backgroundColor: '#0f172a', titleColor: '#94a3b8', bodyColor: '#f1f5f9', borderColor: '#334155', borderWidth: 1,
+                    callbacks: {
+                        label: function(context) {
+                            if (context.dataset.type === 'line') return ''; 
+                            return `VCN: ${context.parsed.x.toFixed(2)}% | ${activeScatterEtf}: ${context.parsed.y.toFixed(2)}%`;
+                        }
+                    }
+                }
+            },
+            scales: {
+                x: {
+                    min: -maxBound, // NEW: Lock minimum bound
+                    max: maxBound,  // NEW: Lock maximum bound
+                    grid: { color: '#1e293b' },
+                    ticks: { color: '#64748b', callback: val => val + '%' },
+                    title: { display: true, text: 'VCN Daily Return', color: '#94a3b8', font: { weight: 'bold' } }
+                },
+                y: {
+                    min: -maxBound, // NEW: Lock minimum bound
+                    max: maxBound,  // NEW: Lock maximum bound
+                    grid: { color: '#1e293b' },
+                    ticks: { color: '#94a3b8', callback: val => val + '%' },
+                    title: { display: true, text: `${activeScatterEtf} Daily Return`, color: '#94a3b8', font: { weight: 'bold' } }
+                }
             }
         }
     });

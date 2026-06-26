@@ -10,8 +10,11 @@
 <body class="bg-slate-900 text-slate-100 min-h-screen p-6 font-sans">
 
     <div class="max-w-7xl mx-auto space-y-6">
-        <header class="border-b border-slate-800 pb-4">
+        
+        <header class="border-b border-slate-800 pb-4 flex flex-col sm:flex-row sm:justify-between sm:items-end gap-2">
             <h1 class="text-2xl font-bold tracking-tight">CANADIAN SECTOR ETFs</h1>
+            <div id="last-updated" class="text-sm font-medium text-slate-400">
+                </div>
         </header>
 
         <section class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-4" id="ticker-grid">
@@ -89,6 +92,21 @@
                 </div>
                 <div class="relative w-full h-[450px]">
                     <canvas id="betaChart"></canvas>
+                </div>
+            </div>
+            
+            <div class="bg-slate-950 p-6 rounded-xl border border-slate-800 shadow-xl">
+                <div class="mb-6 flex flex-col md:flex-row justify-between items-start md:items-center gap-4 bg-slate-900 p-4 rounded-lg border border-slate-800">
+                    <div>
+                        <h2 class="text-lg font-semibold text-slate-100">Daily Percentage Change vs VCN (Last 200 Trading Days)</h2>
+                    </div>
+                    <div>
+                        <label class="text-xs font-semibold text-slate-400 block mb-1">Target ETF</label>
+                        <select id="scatter-etf-select" class="bg-slate-950 border border-slate-700 text-slate-200 text-sm rounded-md focus:ring-cyan-500 focus:border-cyan-500 block w-full p-2 outline-none cursor-pointer"></select>
+                    </div>
+                </div>
+                <div class="relative w-full max-w-[550px] mx-auto aspect-square">
+                    <canvas id="scatterChart"></canvas>
                 </div>
             </div>
 

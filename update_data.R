@@ -82,7 +82,7 @@ dividend_summary <- map_dfr(etf_tickers, function(ticker) {
         }
         
         df <- df |>
-                filter(date >= Sys.Date() - 364) |>
+                filter(date >= Sys.Date() - 365) |>
                 summarise(dividend_count = n(),
                           dividend_amount = round(sum(value), 2)) |>
                 mutate(symbol = ticker,
@@ -156,5 +156,29 @@ write_json(prices_with_ma,
 write_json(prices_indexed,
            "data/prices_indexed.json",
            pretty = TRUE)
+
+
+## GIT FIX ####
+
+# PUSHING AFTER GITHUB ACTIONS PIPELINE RUNS
+
+# Open the Terminal window
+
+# Lock in local script edits:
+#    git add .
+#    git commit -m "Save local script updates"
+
+# Pull the automated commit from GitHub:
+#    git pull origin main
+
+# Git will likely flag a merge conflict 
+# Tell Git to just keep your local JSON files:
+#    git checkout --ours data/*.json
+#
+# Bundle the resolved conflict and push new files:
+#    git add data/
+#    git commit -m "Resolve auto-generated JSON data conflict"
+#    git push origin main
+
 
 
