@@ -12,8 +12,8 @@
     "dividend_count": 12,
     "frequency": "MONTHLY",
     "dividend_amount": 1.16,
-    "current_price": 37,
-    "yield_pct": 3.14
+    "current_price": 37.09,
+    "yield_pct": 3.13
   },
   {
     "symbol": "XEG",
@@ -28,7 +28,7 @@
     "dividend_count": 4,
     "frequency": "QUARTERLY",
     "dividend_amount": 1.45,
-    "current_price": 71.66,
+    "current_price": 71.79,
     "yield_pct": 2.02
   },
   {
