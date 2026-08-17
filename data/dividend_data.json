@@ -4,7 +4,7 @@
     "dividend_count": 12,
     "frequency": "MONTHLY",
     "dividend_amount": 0.74,
-    "current_price": 16.59,
+    "current_price": 16.6,
     "yield_pct": 4.46
   },
   {
@@ -12,7 +12,7 @@
     "dividend_count": 12,
     "frequency": "MONTHLY",
     "dividend_amount": 1.15,
-    "current_price": 36.14,
+    "current_price": 36.22,
     "yield_pct": 3.18
   },
   {
@@ -20,15 +20,15 @@
     "dividend_count": 4,
     "frequency": "QUARTERLY",
     "dividend_amount": 0.7,
-    "current_price": 27.48,
-    "yield_pct": 2.55
+    "current_price": 27.61,
+    "yield_pct": 2.54
   },
   {
     "symbol": "VCN",
     "dividend_count": 4,
     "frequency": "QUARTERLY",
     "dividend_amount": 1.45,
-    "current_price": 74.77,
+    "current_price": 74.71,
     "yield_pct": 1.94
   },
   {
@@ -36,7 +36,7 @@
     "dividend_count": 12,
     "frequency": "MONTHLY",
     "dividend_amount": 1.87,
-    "current_price": 97.42,
+    "current_price": 97.45,
     "yield_pct": 1.92
   },
   {
@@ -44,7 +44,7 @@
     "dividend_count": 4,
     "frequency": "QUARTERLY",
     "dividend_amount": 0.19,
-    "current_price": 45.16,
+    "current_price": 45.71,
     "yield_pct": 0.42
   },
   {
@@ -52,7 +52,7 @@
     "dividend_count": 0,
     "frequency": "NONE",
     "dividend_amount": 0,
-    "current_price": 81.93,
+    "current_price": 79.6,
     "yield_pct": 0
   }
 ]
