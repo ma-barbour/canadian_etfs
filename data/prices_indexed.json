@@ -3260,7 +3260,7 @@
   {
     "date": "2021-11-22",
     "symbol": "XRE",
-    "price_indexed": 103.6,
+    "price_indexed": 103.59,
     "ma_50_indexed": 102.78
   },
   {
@@ -3543,7 +3543,7 @@
     "date": "2021-12-01",
     "symbol": "XMA",
     "price_indexed": 95.77,
-    "ma_50_indexed": 97.65
+    "ma_50_indexed": 97.64
   },
   {
     "date": "2021-12-01",
@@ -4503,7 +4503,7 @@
     "date": "2022-01-06",
     "symbol": "XEG",
     "price_indexed": 141.98,
-    "ma_50_indexed": 130.77
+    "ma_50_indexed": 130.78
   },
   {
     "date": "2022-01-06",
@@ -5162,7 +5162,7 @@
   {
     "date": "2022-01-27",
     "symbol": "VCN",
-    "price_indexed": 102.29,
+    "price_indexed": 102.28,
     "ma_50_indexed": 104.43
   },
   {
@@ -5180,7 +5180,7 @@
   {
     "date": "2022-01-28",
     "symbol": "XMA",
-    "price_indexed": 95.69,
+    "price_indexed": 95.68,
     "ma_50_indexed": 98.7
   },
   {
@@ -5511,7 +5511,7 @@
     "date": "2022-02-09",
     "symbol": "XEG",
     "price_indexed": 157.34,
-    "ma_50_indexed": 141.24
+    "ma_50_indexed": 141.25
   },
   {
     "date": "2022-02-09",
@@ -5726,7 +5726,7 @@
   {
     "date": "2022-02-16",
     "symbol": "XMA",
-    "price_indexed": 107.47,
+    "price_indexed": 107.46,
     "ma_50_indexed": 99.43
   },
   {
@@ -5936,7 +5936,7 @@
   {
     "date": "2022-02-24",
     "symbol": "XMA",
-    "price_indexed": 107.47,
+    "price_indexed": 107.46,
     "ma_50_indexed": 100.56
   },
   {
@@ -7016,7 +7016,7 @@
   {
     "date": "2022-04-01",
     "symbol": "XFN",
-    "price_indexed": 111.85,
+    "price_indexed": 111.84,
     "ma_50_indexed": 113.45
   },
   {
@@ -7136,7 +7136,7 @@
   {
     "date": "2022-04-05",
     "symbol": "VCN",
-    "price_indexed": 109.51,
+    "price_indexed": 109.5,
     "ma_50_indexed": 106.65
   },
   {
@@ -7731,7 +7731,7 @@
     "date": "2022-04-27",
     "symbol": "XFN",
     "price_indexed": 104.35,
-    "ma_50_indexed": 111.6
+    "ma_50_indexed": 111.59
   },
   {
     "date": "2022-04-27",
@@ -8702,7 +8702,7 @@
   {
     "date": "2022-05-31",
     "symbol": "XEG",
-    "price_indexed": 219.16,
+    "price_indexed": 219.17,
     "ma_50_indexed": 194.75
   },
   {
@@ -9080,7 +9080,7 @@
   {
     "date": "2022-06-13",
     "symbol": "XEG",
-    "price_indexed": 219.16,
+    "price_indexed": 219.17,
     "ma_50_indexed": 202.71
   },
   {
@@ -10611,7 +10611,7 @@
     "date": "2022-08-04",
     "symbol": "XRE",
     "price_indexed": 90.77,
-    "ma_50_indexed": 88.93
+    "ma_50_indexed": 88.94
   },
   {
     "date": "2022-08-04",
@@ -10658,7 +10658,7 @@
   {
     "date": "2022-08-05",
     "symbol": "XUT",
-    "price_indexed": 106.89,
+    "price_indexed": 106.88,
     "ma_50_indexed": 103.58
   },
   {
@@ -11985,7 +11985,7 @@
     "date": "2022-09-21",
     "symbol": "XMA",
     "price_indexed": 93.13,
-    "ma_50_indexed": 92.18
+    "ma_50_indexed": 92.17
   },
   {
     "date": "2022-09-21",
@@ -14126,7 +14126,7 @@
   {
     "date": "2022-12-02",
     "symbol": "XMA",
-    "price_indexed": 106.19,
+    "price_indexed": 106.18,
     "ma_50_indexed": 96.4
   },
   {
@@ -14169,7 +14169,7 @@
     "date": "2022-12-05",
     "symbol": "XMA",
     "price_indexed": 104.56,
-    "ma_50_indexed": 96.73
+    "ma_50_indexed": 96.72
   },
   {
     "date": "2022-12-05",
@@ -14289,7 +14289,7 @@
     "date": "2022-12-08",
     "symbol": "XEG",
     "price_indexed": 197,
-    "ma_50_indexed": 208.95
+    "ma_50_indexed": 208.96
   },
   {
     "date": "2022-12-08",
@@ -14420,7 +14420,7 @@
   {
     "date": "2022-12-13",
     "symbol": "XMA",
-    "price_indexed": 106.19,
+    "price_indexed": 106.18,
     "ma_50_indexed": 98.29
   },
   {
@@ -15596,7 +15596,7 @@
   {
     "date": "2023-01-25",
     "symbol": "XMA",
-    "price_indexed": 113.98,
+    "price_indexed": 113.97,
     "ma_50_indexed": 105.08
   },
   {
@@ -16803,7 +16803,7 @@
     "date": "2023-03-08",
     "symbol": "XFN",
     "price_indexed": 105.55,
-    "ma_50_indexed": 105.22
+    "ma_50_indexed": 105.21
   },
   {
     "date": "2023-03-08",
@@ -16958,7 +16958,7 @@
   {
     "date": "2023-03-13",
     "symbol": "XUT",
-    "price_indexed": 91.83,
+    "price_indexed": 91.82,
     "ma_50_indexed": 92.83
   },
   {
@@ -19473,7 +19473,7 @@
     "date": "2023-06-07",
     "symbol": "XRE",
     "price_indexed": 89.68,
-    "ma_50_indexed": 89.66
+    "ma_50_indexed": 89.67
   },
   {
     "date": "2023-06-07",
@@ -20805,7 +20805,7 @@
     "date": "2023-07-24",
     "symbol": "XMA",
     "price_indexed": 106.75,
-    "ma_50_indexed": 104.44
+    "ma_50_indexed": 104.43
   },
   {
     "date": "2023-07-24",
@@ -21669,7 +21669,7 @@
     "date": "2023-08-22",
     "symbol": "VCN",
     "price_indexed": 103.18,
-    "ma_50_indexed": 104.94
+    "ma_50_indexed": 104.93
   },
   {
     "date": "2023-08-23",
@@ -23379,7 +23379,7 @@
     "date": "2023-10-20",
     "symbol": "XRE",
     "price_indexed": 77,
-    "ma_50_indexed": 84.43
+    "ma_50_indexed": 84.44
   },
   {
     "date": "2023-10-20",
@@ -25701,7 +25701,7 @@
     "date": "2024-01-10",
     "symbol": "VCN",
     "price_indexed": 111.64,
-    "ma_50_indexed": 107.37
+    "ma_50_indexed": 107.36
   },
   {
     "date": "2024-01-11",
@@ -28239,7 +28239,7 @@
     "date": "2024-04-08",
     "symbol": "XMA",
     "price_indexed": 111.31,
-    "ma_50_indexed": 97.54
+    "ma_50_indexed": 97.53
   },
   {
     "date": "2024-04-08",
@@ -28334,7 +28334,7 @@
   {
     "date": "2024-04-10",
     "symbol": "XRE",
-    "price_indexed": 85.53,
+    "price_indexed": 85.54,
     "ma_50_indexed": 87.31
   },
   {
@@ -30530,7 +30530,7 @@
   {
     "date": "2024-06-24",
     "symbol": "VCN",
-    "price_indexed": 117.83,
+    "price_indexed": 117.82,
     "ma_50_indexed": 118.34
   },
   {
@@ -31328,7 +31328,7 @@
   {
     "date": "2024-07-22",
     "symbol": "VCN",
-    "price_indexed": 123.7,
+    "price_indexed": 123.69,
     "ma_50_indexed": 119.47
   },
   {
@@ -32078,7 +32078,7 @@
   {
     "date": "2024-08-16",
     "symbol": "XUT",
-    "price_indexed": 96.6,
+    "price_indexed": 96.59,
     "ma_50_indexed": 91.98
   },
   {
@@ -32552,7 +32552,7 @@
   {
     "date": "2024-09-04",
     "symbol": "XFN",
-    "price_indexed": 128.2,
+    "price_indexed": 128.19,
     "ma_50_indexed": 121.53
   },
   {
@@ -33489,7 +33489,7 @@
     "date": "2024-10-04",
     "symbol": "XMA",
     "price_indexed": 127.65,
-    "ma_50_indexed": 122.8
+    "ma_50_indexed": 122.79
   },
   {
     "date": "2024-10-04",
@@ -35421,7 +35421,7 @@
     "date": "2024-12-10",
     "symbol": "XMA",
     "price_indexed": 129.66,
-    "ma_50_indexed": 129.35
+    "ma_50_indexed": 129.34
   },
   {
     "date": "2024-12-10",
@@ -36296,7 +36296,7 @@
   {
     "date": "2025-01-13",
     "symbol": "XEG",
-    "price_indexed": 249.15,
+    "price_indexed": 249.16,
     "ma_50_indexed": 243.68
   },
   {
@@ -36716,7 +36716,7 @@
   {
     "date": "2025-01-27",
     "symbol": "XEG",
-    "price_indexed": 243.84,
+    "price_indexed": 243.85,
     "ma_50_indexed": 244.68
   },
   {
@@ -37286,7 +37286,7 @@
   {
     "date": "2025-02-13",
     "symbol": "XUT",
-    "price_indexed": 101.51,
+    "price_indexed": 101.5,
     "ma_50_indexed": 101.58
   },
   {
@@ -39230,7 +39230,7 @@
   {
     "date": "2025-04-23",
     "symbol": "XFN",
-    "price_indexed": 140.6,
+    "price_indexed": 140.59,
     "ma_50_indexed": 141.36
   },
   {
@@ -39398,7 +39398,7 @@
   {
     "date": "2025-04-29",
     "symbol": "XFN",
-    "price_indexed": 144.15,
+    "price_indexed": 144.14,
     "ma_50_indexed": 141.1
   },
   {
@@ -39663,7 +39663,7 @@
     "date": "2025-05-07",
     "symbol": "XMA",
     "price_indexed": 149.55,
-    "ma_50_indexed": 143
+    "ma_50_indexed": 142.99
   },
   {
     "date": "2025-05-07",
@@ -39939,7 +39939,7 @@
     "date": "2025-05-15",
     "symbol": "VCN",
     "price_indexed": 144.36,
-    "ma_50_indexed": 136.76
+    "ma_50_indexed": 136.75
   },
   {
     "date": "2025-05-16",
@@ -41883,7 +41883,7 @@
     "date": "2025-07-23",
     "symbol": "XEG",
     "price_indexed": 246.44,
-    "ma_50_indexed": 242.13
+    "ma_50_indexed": 242.14
   },
   {
     "date": "2025-07-23",
@@ -42465,7 +42465,7 @@
     "date": "2025-08-13",
     "symbol": "XFN",
     "price_indexed": 163.55,
-    "ma_50_indexed": 158.98
+    "ma_50_indexed": 158.97
   },
   {
     "date": "2025-08-13",
@@ -42896,7 +42896,7 @@
   {
     "date": "2025-08-27",
     "symbol": "XMA",
-    "price_indexed": 177.61,
+    "price_indexed": 177.6,
     "ma_50_indexed": 162.4
   },
   {
@@ -44073,7 +44073,7 @@
     "date": "2025-10-07",
     "symbol": "XMA",
     "price_indexed": 217.01,
-    "ma_50_indexed": 186.48
+    "ma_50_indexed": 186.47
   },
   {
     "date": "2025-10-07",
@@ -45248,7 +45248,7 @@
   {
     "date": "2025-11-17",
     "symbol": "XMA",
-    "price_indexed": 214.76,
+    "price_indexed": 214.75,
     "ma_50_indexed": 209.25
   },
   {
@@ -45416,7 +45416,7 @@
   {
     "date": "2025-11-21",
     "symbol": "XMA",
-    "price_indexed": 210.31,
+    "price_indexed": 210.3,
     "ma_50_indexed": 210.66
   },
   {
@@ -46581,7 +46581,7 @@
     "date": "2026-01-05",
     "symbol": "XFN",
     "price_indexed": 198.33,
-    "ma_50_indexed": 185.48
+    "ma_50_indexed": 185.47
   },
   {
     "date": "2026-01-05",
@@ -47853,7 +47853,7 @@
     "date": "2026-02-17",
     "symbol": "XMA",
     "price_indexed": 277.68,
-    "ma_50_indexed": 261.67
+    "ma_50_indexed": 261.66
   },
   {
     "date": "2026-02-17",
@@ -49197,7 +49197,7 @@
     "date": "2026-04-02",
     "symbol": "XMA",
     "price_indexed": 274.21,
-    "ma_50_indexed": 278.86
+    "ma_50_indexed": 278.85
   },
   {
     "date": "2026-04-02",
@@ -49269,7 +49269,7 @@
     "date": "2026-04-07",
     "symbol": "XFN",
     "price_indexed": 193.89,
-    "ma_50_indexed": 192.43
+    "ma_50_indexed": 192.42
   },
   {
     "date": "2026-04-07",
@@ -49280,7 +49280,7 @@
   {
     "date": "2026-04-07",
     "symbol": "XMA",
-    "price_indexed": 274.85,
+    "price_indexed": 274.84,
     "ma_50_indexed": 278.19
   },
   {
@@ -49922,7 +49922,7 @@
   {
     "date": "2026-04-28",
     "symbol": "XRE",
-    "price_indexed": 102.9,
+    "price_indexed": 102.91,
     "ma_50_indexed": 98.7
   },
   {
@@ -51152,7 +51152,7 @@
   {
     "date": "2026-06-09",
     "symbol": "VCN",
-    "price_indexed": 193.45,
+    "price_indexed": 193.44,
     "ma_50_indexed": 190.84
   },
   {
@@ -51165,7 +51165,7 @@
     "date": "2026-06-10",
     "symbol": "XEG",
     "price_indexed": 388.64,
-    "ma_50_indexed": 389.09
+    "ma_50_indexed": 389.1
   },
   {
     "date": "2026-06-10",
@@ -51231,7 +51231,7 @@
     "date": "2026-06-11",
     "symbol": "XUT",
     "price_indexed": 135.4,
-    "ma_50_indexed": 131.62
+    "ma_50_indexed": 131.61
   },
   {
     "date": "2026-06-11",
@@ -51699,7 +51699,7 @@
     "date": "2026-06-26",
     "symbol": "VCN",
     "price_indexed": 196.77,
-    "ma_50_indexed": 193.21
+    "ma_50_indexed": 193.2
   },
   {
     "date": "2026-06-29",
@@ -51885,7 +51885,7 @@
     "date": "2026-07-06",
     "symbol": "XMA",
     "price_indexed": 241.53,
-    "ma_50_indexed": 253.52
+    "ma_50_indexed": 253.51
   },
   {
     "date": "2026-07-06",
@@ -52136,7 +52136,7 @@
   {
     "date": "2026-07-14",
     "symbol": "XMA",
-    "price_indexed": 229.82,
+    "price_indexed": 229.81,
     "ma_50_indexed": 250.39
   },
   {
@@ -52333,19 +52333,27 @@
   },
   {
     "date": "2026-07-21",
-    "symbol": "XFN"
+    "symbol": "XFN",
+    "price_indexed": 240.46,
+    "ma_50_indexed": 228.75
   },
   {
     "date": "2026-07-21",
-    "symbol": "XEG"
+    "symbol": "XEG",
+    "price_indexed": 394.16,
+    "ma_50_indexed": 380.88
   },
   {
     "date": "2026-07-21",
-    "symbol": "XMA"
+    "symbol": "XMA",
+    "price_indexed": 229.58,
+    "ma_50_indexed": 246.99
   },
   {
     "date": "2026-07-21",
-    "symbol": "XIT"
+    "symbol": "XIT",
+    "price_indexed": 123.25,
+    "ma_50_indexed": 122.67
   },
   {
     "date": "2026-07-21",
@@ -52353,27 +52361,39 @@
   },
   {
     "date": "2026-07-21",
-    "symbol": "XUT"
+    "symbol": "XUT",
+    "price_indexed": 138.35,
+    "ma_50_indexed": 135.25
   },
   {
     "date": "2026-07-21",
-    "symbol": "VCN"
+    "symbol": "VCN",
+    "price_indexed": 199.41,
+    "ma_50_indexed": 195.81
   },
   {
     "date": "2026-07-22",
-    "symbol": "XFN"
+    "symbol": "XFN",
+    "price_indexed": 240.59,
+    "ma_50_indexed": 229.34
   },
   {
     "date": "2026-07-22",
-    "symbol": "XEG"
+    "symbol": "XEG",
+    "price_indexed": 399.16,
+    "ma_50_indexed": 381.07
   },
   {
     "date": "2026-07-22",
-    "symbol": "XMA"
+    "symbol": "XMA",
+    "price_indexed": 235.38,
+    "ma_50_indexed": 246.15
   },
   {
     "date": "2026-07-22",
-    "symbol": "XIT"
+    "symbol": "XIT",
+    "price_indexed": 119.9,
+    "ma_50_indexed": 122.81
   },
   {
     "date": "2026-07-22",
@@ -52381,31 +52401,39 @@
   },
   {
     "date": "2026-07-22",
-    "symbol": "XUT"
+    "symbol": "XUT",
+    "price_indexed": 139.83,
+    "ma_50_indexed": 135.44
   },
   {
     "date": "2026-07-22",
-    "symbol": "VCN"
+    "symbol": "VCN",
+    "price_indexed": 200.13,
+    "ma_50_indexed": 195.98
   },
   {
     "date": "2026-07-23",
     "symbol": "XFN",
-    "price_indexed": 237.75
+    "price_indexed": 237.75,
+    "ma_50_indexed": 229.85
   },
   {
     "date": "2026-07-23",
     "symbol": "XEG",
-    "price_indexed": 407.98
+    "price_indexed": 407.98,
+    "ma_50_indexed": 381.25
   },
   {
     "date": "2026-07-23",
     "symbol": "XMA",
-    "price_indexed": 232.08
+    "price_indexed": 232.08,
+    "ma_50_indexed": 245.17
   },
   {
     "date": "2026-07-23",
     "symbol": "XIT",
-    "price_indexed": 116.73
+    "price_indexed": 116.73,
+    "ma_50_indexed": 122.91
   },
   {
     "date": "2026-07-23",
@@ -52415,32 +52443,38 @@
   {
     "date": "2026-07-23",
     "symbol": "XUT",
-    "price_indexed": 141.2
+    "price_indexed": 141.2,
+    "ma_50_indexed": 135.64
   },
   {
     "date": "2026-07-23",
     "symbol": "VCN",
-    "price_indexed": 198.36
+    "price_indexed": 198.36,
+    "ma_50_indexed": 196.1
   },
   {
     "date": "2026-07-24",
     "symbol": "XFN",
-    "price_indexed": 239.84
+    "price_indexed": 239.84,
+    "ma_50_indexed": 230.45
   },
   {
     "date": "2026-07-24",
     "symbol": "XEG",
-    "price_indexed": 404.6
+    "price_indexed": 404.6,
+    "ma_50_indexed": 381.39
   },
   {
     "date": "2026-07-24",
     "symbol": "XMA",
-    "price_indexed": 232.66
+    "price_indexed": 232.66,
+    "ma_50_indexed": 244.25
   },
   {
     "date": "2026-07-24",
     "symbol": "XIT",
-    "price_indexed": 116.61
+    "price_indexed": 116.61,
+    "ma_50_indexed": 123.04
   },
   {
     "date": "2026-07-24",
@@ -52450,32 +52484,38 @@
   {
     "date": "2026-07-24",
     "symbol": "XUT",
-    "price_indexed": 141.5
+    "price_indexed": 141.5,
+    "ma_50_indexed": 135.85
   },
   {
     "date": "2026-07-24",
     "symbol": "VCN",
-    "price_indexed": 199.3
+    "price_indexed": 199.3,
+    "ma_50_indexed": 196.27
   },
   {
     "date": "2026-07-27",
     "symbol": "XFN",
-    "price_indexed": 241.52
+    "price_indexed": 241.52,
+    "ma_50_indexed": 231.01
   },
   {
     "date": "2026-07-27",
     "symbol": "XEG",
-    "price_indexed": 392.55
+    "price_indexed": 392.55,
+    "ma_50_indexed": 381.19
   },
   {
     "date": "2026-07-27",
     "symbol": "XMA",
-    "price_indexed": 233.47
+    "price_indexed": 233.47,
+    "ma_50_indexed": 243.44
   },
   {
     "date": "2026-07-27",
     "symbol": "XIT",
-    "price_indexed": 124.96
+    "price_indexed": 124.96,
+    "ma_50_indexed": 123.29
   },
   {
     "date": "2026-07-27",
@@ -52485,32 +52525,38 @@
   {
     "date": "2026-07-27",
     "symbol": "XUT",
-    "price_indexed": 139.72
+    "price_indexed": 139.72,
+    "ma_50_indexed": 136.02
   },
   {
     "date": "2026-07-27",
     "symbol": "VCN",
-    "price_indexed": 200.6
+    "price_indexed": 200.6,
+    "ma_50_indexed": 196.43
   },
   {
     "date": "2026-07-28",
     "symbol": "XFN",
-    "price_indexed": 244.32
+    "price_indexed": 244.32,
+    "ma_50_indexed": 231.65
   },
   {
     "date": "2026-07-28",
     "symbol": "XEG",
-    "price_indexed": 388.58
+    "price_indexed": 388.58,
+    "ma_50_indexed": 380.76
   },
   {
     "date": "2026-07-28",
     "symbol": "XMA",
-    "price_indexed": 229.58
+    "price_indexed": 229.58,
+    "ma_50_indexed": 242.88
   },
   {
     "date": "2026-07-28",
     "symbol": "XIT",
-    "price_indexed": 131.17
+    "price_indexed": 131.17,
+    "ma_50_indexed": 123.66
   },
   {
     "date": "2026-07-28",
@@ -52520,32 +52566,38 @@
   {
     "date": "2026-07-28",
     "symbol": "XUT",
-    "price_indexed": 139.76
+    "price_indexed": 139.76,
+    "ma_50_indexed": 136.21
   },
   {
     "date": "2026-07-28",
     "symbol": "VCN",
-    "price_indexed": 201.66
+    "price_indexed": 201.66,
+    "ma_50_indexed": 196.67
   },
   {
     "date": "2026-07-29",
     "symbol": "XFN",
-    "price_indexed": 236.95
+    "price_indexed": 236.95,
+    "ma_50_indexed": 232.14
   },
   {
     "date": "2026-07-29",
     "symbol": "XEG",
-    "price_indexed": 400.93
+    "price_indexed": 400.93,
+    "ma_50_indexed": 380.39
   },
   {
     "date": "2026-07-29",
     "symbol": "XMA",
-    "price_indexed": 227.9
+    "price_indexed": 227.9,
+    "ma_50_indexed": 242.48
   },
   {
     "date": "2026-07-29",
     "symbol": "XIT",
-    "price_indexed": 130.43
+    "price_indexed": 130.43,
+    "ma_50_indexed": 124
   },
   {
     "date": "2026-07-29",
@@ -52555,32 +52607,38 @@
   {
     "date": "2026-07-29",
     "symbol": "XUT",
-    "price_indexed": 138.54
+    "price_indexed": 138.54,
+    "ma_50_indexed": 136.35
   },
   {
     "date": "2026-07-29",
     "symbol": "VCN",
-    "price_indexed": 199.16
+    "price_indexed": 199.16,
+    "ma_50_indexed": 196.86
   },
   {
     "date": "2026-07-30",
     "symbol": "XFN",
-    "price_indexed": 240.02
+    "price_indexed": 240.02,
+    "ma_50_indexed": 232.61
   },
   {
     "date": "2026-07-30",
     "symbol": "XEG",
-    "price_indexed": 405.48
+    "price_indexed": 405.48,
+    "ma_50_indexed": 380.3
   },
   {
     "date": "2026-07-30",
     "symbol": "XMA",
-    "price_indexed": 235.33
+    "price_indexed": 235.33,
+    "ma_50_indexed": 242.12
   },
   {
     "date": "2026-07-30",
     "symbol": "XIT",
-    "price_indexed": 128.85
+    "price_indexed": 128.85,
+    "ma_50_indexed": 124.27
   },
   {
     "date": "2026-07-30",
@@ -52590,28 +52648,38 @@
   {
     "date": "2026-07-30",
     "symbol": "XUT",
-    "price_indexed": 138.91
+    "price_indexed": 138.91,
+    "ma_50_indexed": 136.49
   },
   {
     "date": "2026-07-30",
     "symbol": "VCN",
-    "price_indexed": 200.21
+    "price_indexed": 200.21,
+    "ma_50_indexed": 197.03
   },
   {
     "date": "2026-07-31",
-    "symbol": "XFN"
+    "symbol": "XFN",
+    "price_indexed": 240.67,
+    "ma_50_indexed": 233.05
   },
   {
     "date": "2026-07-31",
-    "symbol": "XEG"
+    "symbol": "XEG",
+    "price_indexed": 408.28,
+    "ma_50_indexed": 380.27
   },
   {
     "date": "2026-07-31",
-    "symbol": "XMA"
+    "symbol": "XMA",
+    "price_indexed": 228.31,
+    "ma_50_indexed": 241.59
   },
   {
     "date": "2026-07-31",
-    "symbol": "XIT"
+    "symbol": "XIT",
+    "price_indexed": 125.7,
+    "ma_50_indexed": 124.47
   },
   {
     "date": "2026-07-31",
@@ -52619,31 +52687,39 @@
   },
   {
     "date": "2026-07-31",
-    "symbol": "XUT"
+    "symbol": "XUT",
+    "price_indexed": 137.83,
+    "ma_50_indexed": 136.57
   },
   {
     "date": "2026-07-31",
-    "symbol": "VCN"
+    "symbol": "VCN",
+    "price_indexed": 198.83,
+    "ma_50_indexed": 197.14
   },
   {
     "date": "2026-08-04",
     "symbol": "XFN",
-    "price_indexed": 242.38
+    "price_indexed": 242.38,
+    "ma_50_indexed": 233.5
   },
   {
     "date": "2026-08-04",
     "symbol": "XEG",
-    "price_indexed": 396.52
+    "price_indexed": 396.52,
+    "ma_50_indexed": 380.02
   },
   {
     "date": "2026-08-04",
     "symbol": "XMA",
-    "price_indexed": 239.91
+    "price_indexed": 239.91,
+    "ma_50_indexed": 241.32
   },
   {
     "date": "2026-08-04",
     "symbol": "XIT",
-    "price_indexed": 134.03
+    "price_indexed": 134.03,
+    "ma_50_indexed": 124.8
   },
   {
     "date": "2026-08-04",
@@ -52653,32 +52729,38 @@
   {
     "date": "2026-08-04",
     "symbol": "XUT",
-    "price_indexed": 136.79
+    "price_indexed": 136.79,
+    "ma_50_indexed": 136.62
   },
   {
     "date": "2026-08-04",
     "symbol": "VCN",
-    "price_indexed": 202.07
+    "price_indexed": 202.07,
+    "ma_50_indexed": 197.31
   },
   {
     "date": "2026-08-05",
     "symbol": "XFN",
-    "price_indexed": 243.19
+    "price_indexed": 243.19,
+    "ma_50_indexed": 233.94
   },
   {
     "date": "2026-08-05",
     "symbol": "XEG",
-    "price_indexed": 384.02
+    "price_indexed": 384.02,
+    "ma_50_indexed": 379.78
   },
   {
     "date": "2026-08-05",
     "symbol": "XMA",
-    "price_indexed": 253.6
+    "price_indexed": 253.6,
+    "ma_50_indexed": 241.11
   },
   {
     "date": "2026-08-05",
     "symbol": "XIT",
-    "price_indexed": 137.55
+    "price_indexed": 137.55,
+    "ma_50_indexed": 125.15
   },
   {
     "date": "2026-08-05",
@@ -52688,32 +52770,38 @@
   {
     "date": "2026-08-05",
     "symbol": "XUT",
-    "price_indexed": 134.3
+    "price_indexed": 134.3,
+    "ma_50_indexed": 136.61
   },
   {
     "date": "2026-08-05",
     "symbol": "VCN",
-    "price_indexed": 204.04
+    "price_indexed": 204.04,
+    "ma_50_indexed": 197.49
   },
   {
     "date": "2026-08-06",
     "symbol": "XFN",
-    "price_indexed": 242.68
+    "price_indexed": 242.68,
+    "ma_50_indexed": 234.39
   },
   {
     "date": "2026-08-06",
     "symbol": "XEG",
-    "price_indexed": 386.52
+    "price_indexed": 386.52,
+    "ma_50_indexed": 379.59
   },
   {
     "date": "2026-08-06",
     "symbol": "XMA",
-    "price_indexed": 254.82
+    "price_indexed": 254.82,
+    "ma_50_indexed": 240.97
   },
   {
     "date": "2026-08-06",
     "symbol": "XIT",
-    "price_indexed": 135.22
+    "price_indexed": 135.22,
+    "ma_50_indexed": 125.49
   },
   {
     "date": "2026-08-06",
@@ -52723,32 +52811,38 @@
   {
     "date": "2026-08-06",
     "symbol": "XUT",
-    "price_indexed": 133.56
+    "price_indexed": 133.56,
+    "ma_50_indexed": 136.57
   },
   {
     "date": "2026-08-06",
     "symbol": "VCN",
-    "price_indexed": 203.93
+    "price_indexed": 203.93,
+    "ma_50_indexed": 197.67
   },
   {
     "date": "2026-08-07",
     "symbol": "XFN",
-    "price_indexed": 241.83
+    "price_indexed": 241.83,
+    "ma_50_indexed": 234.83
   },
   {
     "date": "2026-08-07",
     "symbol": "XEG",
-    "price_indexed": 382.7
+    "price_indexed": 382.7,
+    "ma_50_indexed": 379.5
   },
   {
     "date": "2026-08-07",
     "symbol": "XMA",
-    "price_indexed": 266.54
+    "price_indexed": 266.54,
+    "ma_50_indexed": 241.18
   },
   {
     "date": "2026-08-07",
     "symbol": "XIT",
-    "price_indexed": 136.81
+    "price_indexed": 136.81,
+    "ma_50_indexed": 125.88
   },
   {
     "date": "2026-08-07",
@@ -52758,32 +52852,38 @@
   {
     "date": "2026-08-07",
     "symbol": "XUT",
-    "price_indexed": 133.07
+    "price_indexed": 133.07,
+    "ma_50_indexed": 136.53
   },
   {
     "date": "2026-08-07",
     "symbol": "VCN",
-    "price_indexed": 205.37
+    "price_indexed": 205.37,
+    "ma_50_indexed": 197.91
   },
   {
     "date": "2026-08-10",
     "symbol": "XFN",
-    "price_indexed": 241.68
+    "price_indexed": 241.68,
+    "ma_50_indexed": 235.31
   },
   {
     "date": "2026-08-10",
     "symbol": "XEG",
-    "price_indexed": 396.81
+    "price_indexed": 396.81,
+    "ma_50_indexed": 379.73
   },
   {
     "date": "2026-08-10",
     "symbol": "XMA",
-    "price_indexed": 266.72
+    "price_indexed": 266.72,
+    "ma_50_indexed": 241.28
   },
   {
     "date": "2026-08-10",
     "symbol": "XIT",
-    "price_indexed": 138.13
+    "price_indexed": 138.13,
+    "ma_50_indexed": 126.23
   },
   {
     "date": "2026-08-10",
@@ -52793,32 +52893,38 @@
   {
     "date": "2026-08-10",
     "symbol": "XUT",
-    "price_indexed": 130.92
+    "price_indexed": 130.92,
+    "ma_50_indexed": 136.45
   },
   {
     "date": "2026-08-10",
     "symbol": "VCN",
-    "price_indexed": 205.93
+    "price_indexed": 205.93,
+    "ma_50_indexed": 198.15
   },
   {
     "date": "2026-08-11",
     "symbol": "XFN",
-    "price_indexed": 241.1
+    "price_indexed": 241.1,
+    "ma_50_indexed": 235.76
   },
   {
     "date": "2026-08-11",
     "symbol": "XEG",
-    "price_indexed": 399.6
+    "price_indexed": 399.6,
+    "ma_50_indexed": 380.11
   },
   {
     "date": "2026-08-11",
     "symbol": "XMA",
-    "price_indexed": 266.19
+    "price_indexed": 266.19,
+    "ma_50_indexed": 241.26
   },
   {
     "date": "2026-08-11",
     "symbol": "XIT",
-    "price_indexed": 136.18
+    "price_indexed": 136.18,
+    "ma_50_indexed": 126.44
   },
   {
     "date": "2026-08-11",
@@ -52828,32 +52934,38 @@
   {
     "date": "2026-08-11",
     "symbol": "XUT",
-    "price_indexed": 133.33
+    "price_indexed": 133.33,
+    "ma_50_indexed": 136.44
   },
   {
     "date": "2026-08-11",
     "symbol": "VCN",
-    "price_indexed": 205.96
+    "price_indexed": 205.96,
+    "ma_50_indexed": 198.38
   },
   {
     "date": "2026-08-12",
     "symbol": "XFN",
-    "price_indexed": 243.71
+    "price_indexed": 243.71,
+    "ma_50_indexed": 236.32
   },
   {
     "date": "2026-08-12",
     "symbol": "XEG",
-    "price_indexed": 400.93
+    "price_indexed": 400.93,
+    "ma_50_indexed": 380.35
   },
   {
     "date": "2026-08-12",
     "symbol": "XMA",
-    "price_indexed": 267.99
+    "price_indexed": 267.99,
+    "ma_50_indexed": 241.34
   },
   {
     "date": "2026-08-12",
     "symbol": "XIT",
-    "price_indexed": 136
+    "price_indexed": 136,
+    "ma_50_indexed": 126.49
   },
   {
     "date": "2026-08-12",
@@ -52863,32 +52975,38 @@
   {
     "date": "2026-08-12",
     "symbol": "XUT",
-    "price_indexed": 133.52
+    "price_indexed": 133.52,
+    "ma_50_indexed": 136.45
   },
   {
     "date": "2026-08-12",
     "symbol": "VCN",
-    "price_indexed": 206.98
+    "price_indexed": 206.98,
+    "ma_50_indexed": 198.61
   },
   {
     "date": "2026-08-13",
     "symbol": "XFN",
-    "price_indexed": 244.92
+    "price_indexed": 244.92,
+    "ma_50_indexed": 236.83
   },
   {
     "date": "2026-08-13",
     "symbol": "XEG",
-    "price_indexed": 404.01
+    "price_indexed": 404.01,
+    "ma_50_indexed": 380.46
   },
   {
     "date": "2026-08-13",
     "symbol": "XMA",
-    "price_indexed": 262.02
+    "price_indexed": 262.02,
+    "ma_50_indexed": 241.23
   },
   {
     "date": "2026-08-13",
     "symbol": "XIT",
-    "price_indexed": 140.48
+    "price_indexed": 140.48,
+    "ma_50_indexed": 126.61
   },
   {
     "date": "2026-08-13",
@@ -52898,32 +53016,38 @@
   {
     "date": "2026-08-13",
     "symbol": "XUT",
-    "price_indexed": 134.26
+    "price_indexed": 134.26,
+    "ma_50_indexed": 136.46
   },
   {
     "date": "2026-08-13",
     "symbol": "VCN",
-    "price_indexed": 207.46
+    "price_indexed": 207.46,
+    "ma_50_indexed": 198.81
   },
   {
     "date": "2026-08-14",
     "symbol": "XFN",
-    "price_indexed": 245
+    "price_indexed": 245,
+    "ma_50_indexed": 237.36
   },
   {
     "date": "2026-08-14",
     "symbol": "XEG",
-    "price_indexed": 405.93
+    "price_indexed": 405.93,
+    "ma_50_indexed": 380.53
   },
   {
     "date": "2026-08-14",
     "symbol": "XMA",
-    "price_indexed": 265.21
+    "price_indexed": 265.21,
+    "ma_50_indexed": 241.34
   },
   {
     "date": "2026-08-14",
     "symbol": "XIT",
-    "price_indexed": 136.48
+    "price_indexed": 136.48,
+    "ma_50_indexed": 126.75
   },
   {
     "date": "2026-08-14",
@@ -52933,39 +53057,95 @@
   {
     "date": "2026-08-14",
     "symbol": "XUT",
-    "price_indexed": 134.56
+    "price_indexed": 134.56,
+    "ma_50_indexed": 136.47
   },
   {
     "date": "2026-08-14",
     "symbol": "VCN",
-    "price_indexed": 207.29
+    "price_indexed": 207.29,
+    "ma_50_indexed": 199.04
   },
   {
     "date": "2026-08-17",
-    "symbol": "XFN"
+    "symbol": "XFN",
+    "price_indexed": 243.76,
+    "ma_50_indexed": 237.8
   },
   {
     "date": "2026-08-17",
-    "symbol": "XEG"
+    "symbol": "XEG",
+    "price_indexed": 414.31,
+    "ma_50_indexed": 380.7
   },
   {
     "date": "2026-08-17",
-    "symbol": "XMA"
+    "symbol": "XMA",
+    "price_indexed": 268.92,
+    "ma_50_indexed": 241.45
   },
   {
     "date": "2026-08-17",
-    "symbol": "XIT"
+    "symbol": "XIT",
+    "price_indexed": 134.31,
+    "ma_50_indexed": 126.83
   },
   {
     "date": "2026-08-17",
-    "symbol": "XRE"
+    "symbol": "XRE",
+    "price_indexed": 103.01
   },
   {
     "date": "2026-08-17",
-    "symbol": "XUT"
+    "symbol": "XUT",
+    "price_indexed": 133.33,
+    "ma_50_indexed": 136.45
   },
   {
     "date": "2026-08-17",
-    "symbol": "VCN"
+    "symbol": "VCN",
+    "price_indexed": 207.07,
+    "ma_50_indexed": 199.22
+  },
+  {
+    "date": "2026-08-18",
+    "symbol": "XFN",
+    "price_indexed": 240.9,
+    "ma_50_indexed": 238.18
+  },
+  {
+    "date": "2026-08-18",
+    "symbol": "XEG",
+    "price_indexed": 419.16,
+    "ma_50_indexed": 381.31
+  },
+  {
+    "date": "2026-08-18",
+    "symbol": "XMA",
+    "price_indexed": 262.77,
+    "ma_50_indexed": 241.86
+  },
+  {
+    "date": "2026-08-18",
+    "symbol": "XIT",
+    "price_indexed": 131.05,
+    "ma_50_indexed": 126.95
+  },
+  {
+    "date": "2026-08-18",
+    "symbol": "XRE",
+    "price_indexed": 102.76
+  },
+  {
+    "date": "2026-08-18",
+    "symbol": "XUT",
+    "price_indexed": 132.96,
+    "ma_50_indexed": 136.41
+  },
+  {
+    "date": "2026-08-18",
+    "symbol": "VCN",
+    "price_indexed": 205.32,
+    "ma_50_indexed": 199.46
   }
 ]
