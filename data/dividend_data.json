@@ -4,15 +4,15 @@
     "dividend_count": 12,
     "frequency": "MONTHLY",
     "dividend_amount": 0.74,
-    "current_price": 16.52,
-    "yield_pct": 4.48
+    "current_price": 16.54,
+    "yield_pct": 4.47
   },
   {
     "symbol": "XUT",
     "dividend_count": 12,
     "frequency": "MONTHLY",
     "dividend_amount": 1.15,
-    "current_price": 35.74,
+    "current_price": 35.75,
     "yield_pct": 3.22
   },
   {
@@ -20,23 +20,23 @@
     "dividend_count": 4,
     "frequency": "QUARTERLY",
     "dividend_amount": 0.7,
-    "current_price": 28.35,
-    "yield_pct": 2.47
+    "current_price": 28.73,
+    "yield_pct": 2.44
   },
   {
     "symbol": "XFN",
     "dividend_count": 12,
     "frequency": "MONTHLY",
     "dividend_amount": 1.87,
-    "current_price": 93.27,
-    "yield_pct": 2
+    "current_price": 91.79,
+    "yield_pct": 2.04
   },
   {
     "symbol": "VCN",
     "dividend_count": 4,
     "frequency": "QUARTERLY",
     "dividend_amount": 1.45,
-    "current_price": 74.11,
+    "current_price": 74.01,
     "yield_pct": 1.96
   },
   {
@@ -44,15 +44,15 @@
     "dividend_count": 4,
     "frequency": "QUARTERLY",
     "dividend_amount": 0.19,
-    "current_price": 48.48,
-    "yield_pct": 0.39
+    "current_price": 49.54,
+    "yield_pct": 0.38
   },
   {
     "symbol": "XIT",
     "dividend_count": 0,
     "frequency": "NONE",
     "dividend_amount": 0,
-    "current_price": 76.62,
+    "current_price": 76.35,
     "yield_pct": 0
   }
 ]
